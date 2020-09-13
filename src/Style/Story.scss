@@ -1,0 +1,38 @@
+.story__list {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  margin: 10px;
+  width: 80%;
+  background-color: aquamarine;
+  padding: 10px;
+
+  h3 {
+    color: black;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .button {
+    color: black;
+
+    font-size: 16px;
+  }
+  button {
+    border: none;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px auto 10px;
+  }
+}

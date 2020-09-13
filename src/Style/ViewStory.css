@@ -1,0 +1,28 @@
+.story__box {
+  width: 70%;
+  margin: 0px;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.list_story {
+  padding: 20px;
+  height: 200px;
+  background-color: #efefef;
+}
+
+.list_story h3 {
+  margin-bottom: 20px;
+}
+
+.list_story .content {
+  text-transform: inherit;
+  text-align: justify;
+}
+
+.list_story .views {
+  margin-top: 20px;
+  float: left;
+}
+/*# sourceMappingURL=ViewStory.css.map */

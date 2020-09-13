@@ -1,0 +1,29 @@
+// * {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
+
+.story__box {
+  width: 70%;
+  margin: 0px;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.list_story {
+  padding: 20px;
+  height: 200px;
+  background-color: #efefef;
+  h3 {
+    margin-bottom: 20px;
+  }
+  .content {
+    text-transform: inherit;
+    text-align: justify;
+  }
+  .views {
+    margin-top: 20px;
+    float: left;
+  }
+}
