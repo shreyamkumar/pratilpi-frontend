@@ -5,13 +5,6 @@ import Story from "./Components/Story.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
-  state = {
-    userid: "",
-  };
-
-  myCallback = async (dataFromChild) => {
-    await this.setState({ userid: dataFromChild });
-  };
   render() {
     return (
       <Router>
@@ -20,7 +13,7 @@ class App extends React.Component {
             <Route path="/story" userid={this.state.userid}>
               <Story />
             </Route>
-            <Route exact path="/" callbackFromparent={this.mycallback}>
+            <Route exact path="/">
               <Login />
             </Route>
           </Switch>

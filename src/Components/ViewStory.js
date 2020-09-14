@@ -18,7 +18,7 @@ class ViewStory extends React.Component {
 
   updateView = async () => {
     await axios
-      .put(`http://pratiliapi.herokuapp.com/api/stories/${this.state.id}`, {
+      .put(`https://pratiliapi.herokuapp.com/api/stories/${this.state.id}`, {
         user: this.state.user,
       })
       .then((response) => {
@@ -28,7 +28,7 @@ class ViewStory extends React.Component {
 
   getStory = async () => {
     await axios
-      .get(`http://pratiliapi.herokuapp.com/api/stories/${this.state.id}`)
+      .get(`https://pratiliapi.herokuapp.com/api/stories/${this.state.id}`)
       .then((response) => {
         const data = response.data;
         this.setState({ story: data });

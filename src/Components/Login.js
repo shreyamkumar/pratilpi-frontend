@@ -13,7 +13,7 @@ function Login() {
   const signIn = (e) => {
     e.preventDefault();
     axios
-      .post("http://pratiliapi.herokuapp.com/api/user/login", {
+      .post("https://pratiliapi.herokuapp.com/api/user/login", {
         email: email,
         password: password,
       })
@@ -37,12 +37,13 @@ function Login() {
   const register = (e) => {
     e.preventDefault();
     axios
-      .post("http://pratiliapi.herokuapp.com/api/user/register", {
+      .post("https://pratiliapi.herokuapp.com/api/user/register", {
         email: email,
         password: password,
       })
       .then((response) => {
         history.push("/story");
+
         console.log(response.data[0]);
       })
       .catch((error) => {

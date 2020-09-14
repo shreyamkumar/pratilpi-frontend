@@ -8,7 +8,6 @@ class Story extends React.Component {
   state = {
     hrx: "",
     stories: [],
-    userToupdate: this.props.userid,
   };
 
   componentDidMount = () => {
@@ -17,7 +16,7 @@ class Story extends React.Component {
 
   getStories = () => {
     axios
-      .get("http://pratiliapi.herokuapp.com/api/stories")
+      .get("https://pratiliapi.herokuapp.com/api/stories")
       .then((response) => {
         const data = response.data;
         this.setState({ stories: data });
@@ -66,10 +65,7 @@ class Story extends React.Component {
               </div>
             </Route>
             <Route exact path="/indi">
-              <ViewStory
-                id={this.state.hrx}
-                userToupdate={this.state.userToupdate}
-              />
+              <ViewStory id={this.state.hrx} />
             </Route>
           </Switch>
         </div>
